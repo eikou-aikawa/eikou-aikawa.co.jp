@@ -518,10 +518,12 @@ class Form{
 
 				hideConfirm();
 				//clearForm();
+
+				alert("フォームは正常に送信されました。");
 			},
 			(error)=>{
 				console.error("An error occured while submitting form data.",error);
-				alert("フォームを送信中にエラーが発生しました。");
+				alert("!! フォームを送信中にエラーが発生しました !!\n※フォームの内容はまだ送信されていません。お手数ですが、少し時間を空けてから再度送信してください。\n※何度もこのエラーが発生する場合は、eikou@wing.ocn.ne.jpにご連絡ください。");
 			}
 		);
 	}
