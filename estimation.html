@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta name="keywords" content="栄光産業,神奈川,東京,埼玉,千葉,静岡,山梨,とび工事業,土工工事業,土木工事業,石工事業,舗装工事業,鋼構造物工事業,水道施設工事業,しゅんせつ工事業,解体工事業,墓石工事業">
+		<title>株式会社 栄光産業 - 無料ご相談・お見積</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+		<link href="index.css" rel="stylesheet" type="text/css" media="all">
+		<link href="./favicon.png" rel="icon" type="image/png">
+		<link href="./favicon.png" rel="apple-touch-icon">
+	</head>
+	<body>
+		<center>
+			<div class="body">
+				<marquee behavior="SCROLL" direction="LEFT" onmouseover="this.stop()" onmouseout="this.start()" scrolldelay="150">栄光産業（えいこうさんぎょう）ホームページにご来訪いただき、誠にありがとうございます。当社は東京都23区・東京都下・神奈川県全域・千葉県・静岡県・埼玉県・山梨県の一部地域を事業エリアとし、各種土木解体業を行っております。</marquee>
+				<div class="logo-container">
+					<a href="index.html">
+						<img src="images/logo.svg" alt="" height="100px" class="logo">
+						<span class="company-name">㍿栄光産業</span>
+					</a>
+					<span class="company-description">
+						土木工事業/総合解体業/舗装工事業/<br/>
+						庭園造作工/産業廃棄物処理・収集・運搬業
+					</span>
+				</div>
+				<input type="checkbox" id="toggle-links">
+				<label for="toggle-links" class="toggle-links-label">
+					<span class="toggle-links-outer">
+						<span class="toggle-links-inner">
+							メニューを表示
+						</span>
+					</span>
+				</label>
+				<div class="links">
+					<div class="link-table">
+						<div class="header-link">
+							<a href="index.html">
+								<span>HOME</span>
+							</a>
+						</div>
+						<div class="header-link">
+							<a href="summary.html" class="header-link">
+								<span>会社案内</span>
+							</a>
+						</div>
+						<div class="header-link">
+							<a href="message.html" class="header-link">
+								<span>ごあいさつ</span>
+							</a>
+						</div>
+						<div class="header-link">
+							<a href="construction.html" class="header-link">
+								<span>当社の土木業</span>
+							</a>
+						</div>
+						<div class="header-link">
+							<a href="deconstruction.html" class="header-link">
+								<span>当社の解体業</span>
+							</a>
+						</div>
+						<div class="header-link">
+							<a href="recycling.html" class="header-link">
+								<span>当社の産業廃棄物<br/>処理手順</span>
+							</a>
+						</div>
+						<div class="header-link">
+							<a href="estimation.html" class="header-link">
+								<span>無料ご相談・<br/>お見積</span>
+							</a>
+						</div>
+						<div class="header-link">
+							<a href="recruitment.html" class="header-link">
+								<span>採用情報</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<h1>無料ご相談・お見積</h1>
+				<!-- <div class="flow-root">
+					<div class="qr">
+						<img src="images/qr_mecard.png" alt="" width="100%">
+						<small>携帯電話カメラ用QRコード</small>
+					</div>
+				</div> -->
+				<p>家を建て替えるので更地にしたい、産業廃棄物を運んで欲しいなど、解体工事・土木工事・開発工事・造成工事に関するお悩み・ご相談はお気軽にどうぞ。「こんなこと頼めるかしら？」というお問い合わせもお待ちしております。</p>
+				<br/>
+				<p><big><b>無料見積もりのご依頼は<a href="#estimate">こちら</a></b></big></p>
+				<p><small>その他のお問い合わせ・ご相談は<a href="#contact">こちら</a></small></p>
+				<br/>
+				<p>なお、お急ぎの方はお電話でも受け付けております。</p>
+				<p><small>電話番号:</small> <big><b>046-210-3755</b></big></p>
+				<br/>
+				<div id="error-form" class="error" style="z-index: 1;"><div></div></div>
+				<div class="confirm-container">
+					<div class="confirm"></div>
+					<div id="error-confirm" class="error" style="z-index: 3;"><div></div></div>
+				</div>
+				<form class="estimate" id="estimate">
+					<h2><big>無料お見積もりフォーム</big></h2>
+					<div class="notes">
+						<p>※<span class="red">*</span><small>印が付いている項目は必須項目です</small></p>
+						<p>※<small>途中保存の有効期限は24時間です</small></p>
+						<p>※<small>添付ファイルは途中保存されません</small></p>
+						<a href="#privacy-policy"><small>プライバシーポリシー</small></a>
+					</div>
+					<h3>Step1: お客様の情報をご入力ください</h3>
+					<div class="form-table">
+						<!-- TODO: autocomplete -->
+						<label for="name">お名前<br/>(法人の方は社名)</label>
+						<input type="text" name="name" id="name" required>
+						<label for="pic">ご担当者名<br/>(法人の場合)</label>
+						<input type="text" name="pic" id="pic">
+						<label for="address">住所</label>
+						<textarea type="text" name="address" id="address" rows="5" cols="25" required></textarea>
+						<label for="tel">電話番号</label>
+						<input type="text" name="tel" id="tel" required>
+						<label for="fax">FAX</label>
+						<input type="text" name="fax" id="fax">
+						<label for="email">メールアドレス</label>
+						<input type="text" name="email" id="email" class="form-email" required>
+						<label for="email-confirm">メールアドレス<br/>(再入力)</label>
+						<input type="text" name="email-confirm" id="email-confirm" required>
+						<label for="phone">携帯電話番号</label>
+						<input type="text" name="phone" id="phone">
+					</div>
+					<h3>Step2: ご希望の工事内容について教えてください</h3>
+					<div class="form-table">
+						<label for="type">ご希望の工事種類</label>
+						<div required>
+							<div>
+								<input type="checkbox" name="type" id="type.deconstruction" value="解体" required>
+								<label for="type.deconstruction">解体</label>
+							</div>
+							<div>
+								<input type="checkbox" name="type" id="type.construction" value="土木" required>
+								<label for="type.construction">土木</label>
+							</div>
+							<div>
+								<!-- TO-DO -->
+								<input type="checkbox" name="type" id="type.other" value="その他" class="other-toggle" required>
+								<label for="type.other">その他</label><div>(<input type="text" name="type-details" id="type-details" class="other-toggled">)</div>
+							</div>
+						</div>
+						<label for="details">ご希望の工事内容</label>
+						<textarea type="text" name="details" id="details" rows="5" cols="25" required></textarea>
+						<label for="site-address">現場住所(住居表示)</label>
+						<textarea type="text" name="site-address" id="site-address" rows="5" cols="25" required></textarea>
+					</div>
+					<h3>Step3: 見積もりについて教えてください</h3>
+					<div class="form-table">
+						<label for="send-method">見積書<br/>送付方法</label>
+						<div required>
+							<div>
+								<input type="radio" name="send-method" id="send-method.fax" value="FAX" required>
+								<label for="send-method.fax">FAX</label>
+							</div>
+							<div>
+								<input type="radio" name="send-method" id="send-method.email" value="メール" required>
+								<label for="send-method.email">メール</label>
+							</div>
+							<div>
+								<input type="radio" name="send-method" id="send-method.post" value="郵送" class="other-toggle" required>
+								<label for="send-method.post">郵送</label>
+								<div class="other-toggled">
+									<div>
+										<input type="radio" name="send-to" id="send-to.home" value="自宅">
+										<label for="send-to.home">自宅</label>
+									</div>
+									<div>
+										<input type="radio" name="send-to" id="send-to.company" value="会社">
+										<label for="send-to.company">会社</label>
+									</div>
+									<div>
+										<input type="radio" name="send-to" id="send-to.other" value="その他" class="other-toggle">
+										<label for="send-to.other">その他</label><div>(<input type="text" name="send-to-address" id="send-to-address" class="other-toggled">)</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<label for="advance-notification">事前電話連絡</label>
+						<div required>
+							<div>
+								<input type="radio" name="advance-notification" id="advance-notification.yes" value="必要" required>
+								<label for="advance-notification.yes">必要</label>
+							</div>
+							<div>
+								<input type="radio" name="advance-notification" id="advance-notification.no" value="不要" required>
+								<label for="advance-notification.no">不要</label>
+							</div>
+						</div>
+						<label for="accompany">見積もり時の<br/>現場への同行</label>
+						<div required>
+							<p>弊社社員が見積もりのため現場に伺いますが、そのときお客様も現場に同行されますか？</p>
+							<div>
+								<input type="radio" name="accompany" id="accompany.yes" value="同行します" class="other-toggle" required>
+								<label for="accompany.yes"><b>同行します</b></label>
+								<div class="other-toggled">
+									<ul>
+										<li>
+											<label for="meet">待ち合わせ場所</label>
+											<div>
+												<div>
+													<input type="radio" name="meet" id="meet.site" value="現場">
+													<label for="meet.site">現場</label>
+												</div>
+												<div>
+													<input type="radio" name="meet" id="meet.other" value="その他" class="other-toggle">
+													<label for="meet.other">その他</label><div style="display: flex;margin-left: 1em;">(<textarea name="meet-address" id="meet-address" class="other-toggled" rows="1" cols="21"></textarea>)</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<label>希望日時<br/>(24時間表記)</label>
+											<div>
+												<label for="time-1st" class="no-bold">第1希望<br/></label>
+												<input type="date" id="time-1st" name="time-1st" min="2025-11-01" max="2125-12-31">
+												<input size="1" maxlength="2" name="date-1st" type="text">時ごろ
+											</div>
+											<div>
+												<label for="time-2nd" class="no-bold">第2希望<br/></label>
+												<input type="date" id="time-2nd" name="time-2nd" min="2025-11-01" max="2125-12-31">
+												<input size="1" maxlength="2" name="date-2nd" type="text">時ごろ
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<input type="radio" name="accompany" id="accompany.no" value="同行しません" class="other-toggle" required>
+								<label for="accompany.no"><b>同行しません</b></label>
+								<div class="other-toggled">
+									<ul>
+										<li>
+											<label for="entry">弊社社員の敷地内立ち入り許可</label>
+											<div required>
+												<div>
+													<input type="radio" name="entry" id="entry.yes" value="はい">
+													<label for="entry.yes">はい</label>
+												</div>
+												<div>
+													<input type="radio" name="entry" id="entry.no" value="いいえ">
+													<label for="entry.no">いいえ</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<label for="scaling">測量の為のスケール当て許可</label>
+											<div required>
+												<div>
+													<input type="radio" name="scaling" id="scaling.yes" value="はい">
+													<label for="scaling.yes">はい</label>
+												</div>
+												<div>
+													<input type="radio" name="scaling" id="scaling.no" value="いいえ">
+													<label for="scaling.no">いいえ</label>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h3>Step4: その他連絡事項</h3>
+					<div class="form-table" style="margin-bottom: 1em;">
+						<label for="note" class="no-bold" style="text-align: left;">その他連絡事項がありましたら、お書きください</label>
+						<div></div>
+						<textarea type="text" name="note" id="note" rows="8" cols="50" style="margin-left: 2em;width: 60vw;"></textarea>
+					</div>
+					<!-- <h4>添付ファイル</h4> -->
+					<div class="form-table" style="display: none;">
+						<div class="files"></div>
+					</div>
+					<div>
+						<p style="margin: 1em">※ファイルを添付する場合は、<a href="mailto:eikou@wing.ocn.ne.jp">eikou@wing.ocn.ne.jp</a>宛に送信してください。</p>
+					</div>
+					<input type="submit" value="送信内容確&NoBreak;認" class="submit">
+					<div class="clear-form">
+						<a href="javascript:estimateForm.clearForm();"><small><small>フォームの内容をクリア</small></small></a>
+					</div>
+				</form>
+				<hr class="require-script"/>
+				<form class="contact" id="contact">
+					<h2><big>お問合せフォーム</big></h2>
+					<div class="notes">
+						<p>※<span class="red">*</span><small>印が付いている項目は必須項目です</small></p>
+						<p>※<small>途中保存の有効期限は24時間です</small></p>
+						<p>※<small>添付ファイルは途中保存されません</small></p>
+						<a href="#privacy-policy"><small>プライバシーポリシー</small></a>
+					</div>
+					<div class="form-table" style="margin-bottom: 0;">
+						<!-- TODO: autocomplete -->
+						<label for="contact-name">お名前<br/>(法人の方は社名)</label>
+						<input type="text" name="contact-name" id="contact-name" required>
+						<label for="contact-email">メールアドレス</label>
+						<input type="text" name="contact-email" id="contact-email" class="form-email" required>
+						<label for="contact-email-confirm">メールアドレス<br/>(再入力)</label>
+						<input type="text" name="contact-email-confirm" id="contact-email-confirm" required>
+						<label for="contents" style="text-align: left;padding-bottom: 0.5em;margin-left: 2em;margin-top: 1em;">お問合せ内容</label>
+						<div required></div>
+					</div>
+					<div class="form-table">
+						<textarea type="text" name="contents" id="contents" rows="8" cols="50" style="margin-left: 2em;width: 60vw;grid-column-start: 1;grid-column-end: 3;" required></textarea>
+					</div>
+					<!-- <h4>添付ファイル</h4> -->
+					<div class="form-table" style="display: none;">
+						<div class="files"></div>
+					</div>
+					<div>
+						<p style="margin: 0 1em 1em">※ファイルを添付する場合は、<a href="mailto:eikou@wing.ocn.ne.jp">eikou@wing.ocn.ne.jp</a>宛に送信してください。</p>
+					</div>
+					<input type="submit" value="送信内容確&NoBreak;認" class="submit">
+					<div class="clear-form">
+						<a href="javascript:contactForm.clearForm();"><small><small>フォームの内容をクリア</small></small></a>
+					</div>
+				</form>
+				<hr class="require-script"/>
+				<noscript style="display: block;margin-bottom: 1em;">
+					<span class="red"><big><b>エラー: フォームを読み込めませんでした。JavaScriptを有効にしてください。</b></big></span>
+				</noscript>
+				<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+				<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+				<script src="estimation.js"></script>
+				<!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script> -->
+				<script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
+				<div id="privacy-policy">
+					<div>
+						<h2><span>プライバ</span><span>シー</span><span>ポリシー</span></h2>
+						<p>栄光産業（以下、当社とします）は、当社の事業目的に応じて、個人情報その他の情報を取得、利用しております。当社は、個人情報保護法及びその他の関連法令並びに各ガイドラインを遵守し、以下の方針にしたがって個人情報を安全に正しく取り扱い、またその保護に努めます。</p>
+						<ol>
+							<li>氏名、メールアドレス、住所など個人を特定することができる情報（以下「個人情報」といいます）の取り扱いについては、これら個人情報の安全管理のために必要かつ適切な措置を整え、また、これらの管理体制を継続して改善するよう努めてまいります。</li>
+							<li>お客様から個人情報を取得する場合は、利用目的を明示し、必要な範囲で取得いたします。</li>
+							<li>法令にて許されている場合を除き、お客様の事前のご承諾なく、個人情報を第三者へ開示または提供致しません。</li>
+							<li>個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス、紛失、破壊、改ざん及び漏えい等を防止及び是正するための措置を講じてまいります。</li>
+							<li>当社が、個人情報の処理を外部委託する場合は、漏えいや再提供を行わないよう契約により義務づけ、適切な管理を実施いたします。</li>
+							<li>当社が委託元よりお預かりした個人情報は、厳正なる管理を行い、契約の範囲内で利用いたします。</li>
+							<li>個人情報の確認、訂正、削除等を希望される場合には<a href="summary.html#hq">当社本社</a>までご連絡ください。ご本人様であることを確認させていただいた上で、すみやかに手続きをいたします。</li>
+						</ol>
+					</div>
+				</div>
+
+				<div class="go-top">
+					<a href="#"><small>ページ上部へ戻る</small></a>
+				</div>
+				<div class="footer">
+					<div class="footer-block-container">
+						<div class="footer-block">
+							<p class="footer-block-title"><b>本社</b></p>
+							<p class="footer-block-postal-code">〒243-0308</p>
+							<p class="footer-block-address">神奈川県愛甲郡愛川町三増687</p>
+							<p class="footer-block-tel">TEL 046-210-3755</p>
+							<p class="footer-block-fax">FAX 046-286-6877</p>
+						</div>
+						<div class="footer-block">
+							<p class="footer-block-title"><b>建築業許可番号</b></p>
+							<p>神奈川県知事許可(般-7)第87144号</p>
+							<ul>
+								<li>とび<wbr/>・土工工事業</li>
+								<li>土木工事業</li>
+								<li>石工事業</li>
+								<li>舗装工事業</li>
+								<li>鋼構造物工事業</li>
+								<li>水道施設工事業</li>
+								<li>しゅんせつ工事業</li>
+								<li>解体工事業</li>
+								<li>墓石工事業</li>
+							</ul>
+						</div>
+						<div class="footer-block">
+							<p class="footer-block-title"><b>収集運搬許可番号</b></p>
+							<table class="bordered-table">
+								<tbody>
+									<tr>
+										<th>神奈川県</th>
+										<td>1402<wbr/>189714</td>
+									</tr>
+									<tr>
+										<th>東京都</th>
+										<td>13-00-189714</td>
+									</tr>
+									<tr>
+										<th>埼玉県</th>
+										<td>01100<wbr/>189714</td>
+									</tr>
+									<tr>
+										<th>千葉県</th>
+										<td>01200<wbr/>189714</td>
+									</tr>
+									<tr>
+										<th>静岡県</th>
+										<td>02201<wbr/>189714</td>
+									</tr>
+									<tr>
+										<th>山梨県</th>
+										<td>01900<wbr/>189714</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<small><a href="estimation.html#privacy-policy">プライバシーポリシー</a></small>
+					<small><p>&copy;2026&ensp;株式会社 栄光産業&emsp;All rights reserved.</p></small>
+				</div>
+				<!-- (｢・ω・)｢にゃおー！ -->
+			</div>
+		</center>
+	</body>
+</html>
