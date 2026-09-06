@@ -1,7 +1,7 @@
 $(".require-script").show();
 
 const emailjsPublicKey="Z8ZJQXlvchgOH7GoL";
-const emailjsServiceId="service_xeczgsl";
+const emailjsServiceId="service_vx3v6uj";
 const emailjsTemplateId="template_cjeucaa";
 const emailjsMaxTotalFileSize=500*1024;
 //const emailjsMaxTotalFileSize=Number.POSITIVE_INFINITY;
