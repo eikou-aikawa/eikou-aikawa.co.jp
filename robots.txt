@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eikou-aikawa.co.jp/sitemap.txt
