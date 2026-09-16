@@ -251,7 +251,8 @@ div.logo-container span.company-name{
 	}
 }
 
-div.logo-container span.company-description{
+div.logo-container p.company-description{
+	display: inline;
 	align-self: end;
 	text-align: left;
 	line-height: 120%;
