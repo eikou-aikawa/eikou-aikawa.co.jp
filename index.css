@@ -1142,6 +1142,12 @@ section#privacy-policy{
 	}
 }
 
+.recruitment-table{
+	& address{
+		margin: 0em 0 0.2em 0.5em;
+	}
+}
+
 
 div.go-top{
 	display: flow-root;
